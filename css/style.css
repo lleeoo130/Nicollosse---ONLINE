@@ -1,0 +1,761 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: 	#FCFCFC;
+	font-family: 		'Roboto', sans-serif;
+	text-align: 		center;
+	line-height: 		1.2em;
+	overflow-y: 		scroll;
+	
+}
+
+.clear {
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Orbitron', sans-serif;
+	line-height: 1.4em;
+}
+
+/* Containers */
+
+.container {
+	margin: 	0 auto;
+	width: 		100%;
+	max-width: 	1500px;
+}
+
+/***** P H P  E R R O R s ****/
+.xdebug-error {
+	background-color: 	#400D01 !important;
+	border-color: 		#26011B !important;
+	color: 				#F1D179 !important;
+	font-size: 			1.4em;
+	margin: 			auto;
+}
+.xdebug-error th {
+	background-color: 	#400D01 !important;
+	padding: 			5px;
+}
+.xdebug-error th span{
+	background-color: 	#400D01 !important;
+	color: 				#F1D179 !important;
+	font-size: 			large !important;
+}
+.xdebug-error tr td {
+	background-color: 	#59331A !important;
+}
+
+
+/* 		B o d y             */
+
+/* N A V */
+
+h1{
+	margin: 0 auto;
+}
+
+h2{
+	margin: 		0;
+	font-size: 		2.4rem;
+	letter-spacing: 0.3rem;
+}
+
+header nav{
+	width: 		60%;
+	margin: 	auto;
+	text-align: center;
+}
+
+nav ul {
+    list-style-type: 	none;
+    padding: 			0;
+    overflow: 			hidden;
+	margin: 			auto;
+}
+
+header nav ul li {
+	display: 	block;
+	width: 		33%;
+	margin: 	auto;
+}
+
+header nav li a{
+	display: 			inline-block;
+	text-align: 		center;
+	text-decoration: 	none;
+	color: 				#000;
+}
+
+#front-page{
+	height: 90vh;
+}
+
+.main-image{
+	height: 65%;
+}
+
+.main-image img{
+	max-width: 		100%;
+	max-height: 	100%;
+	overflow: 		hidden;
+}
+
+
+#second-page {
+	height: 		100vh;
+	box-shadow: 	inset 0px 0px 50px #fcfcfc;
+	border-radius: 	30px;
+	position: 		relative;
+}
+
+.menu {
+	margin: 30px;
+	height: 92%;
+}
+
+.submenu {
+	width: 		100%;
+	float: 		left;
+	height: 	33%;
+	padding: 	0 1% 1%;
+	position: 	relative;
+	display: 	block;
+}
+
+.submenu div{
+	height: 	100%;
+	width: 		100%;
+}
+
+.submenu img{
+	max-height: 	100%;
+	max-width: 		100%;
+	border: 		solid 2px #EAEAEA;
+	margin: 		auto;
+	display: 		block;
+}
+
+.submenu a {
+	width: 100%;
+}
+
+.submenu h3{
+	left: 		0;
+	position: 	absolute;
+    text-align: center;
+    width: 		100%;
+    margin-top: 30%;
+    opacity: 	0;
+    color: 		#000;
+}
+
+.submenu:hover h3{
+	opacity: 1;
+}
+
+.submenu:hover img {
+	opacity: 0.2;
+}
+
+#third-page{
+	height: 100vh;
+}
+
+#contact{
+	height: 100%;
+}
+
+#contact .contact-item{
+	height: 	50%;
+	overflow: 	scroll;
+	padding: 	10%;
+}
+.contact-item img{
+	width: 			100%;
+	max-width: 		95%;
+	padding: 		15px;
+	border-radius: 	50%;
+	border: 		solid 2px #fafafa;
+}
+
+#contact .contact-item .presentation{
+	padding-top: 	5%;
+	margin-bottom: 	50px;
+}
+
+
+.presentation .artiste{
+	font-weight: 	800;
+	font-size: 		2em;
+}
+.presentation .travail{
+	font-weight: 600;
+}
+
+
+
+input , textarea{
+	width: 		100%;
+	text-align: center;
+	padding: 5px;
+	border: 1px #EAEAEA solid;
+	resize: none;
+}
+
+
+
+button{
+	width: 100%;
+	padding: 5px;
+	color: #1a1a1a;
+	background-color: white;	
+    border: 2px #EAEAEA solid;
+}
+
+
+footer{
+	bottom: 	10px;
+	margin-top: 45px;
+}
+footer p {
+	font-size: 0.4em;
+}
+
+/*    P a g e    O e u v r e s */
+
+.page-oeuvres a {
+	text-decoration: 	none;
+	color: 				#000;
+}
+
+#side-menu {
+	width: 				100%;
+	position: 			fixed;
+	background-color: 	#fcfcfc;
+	top: 				0;
+}
+
+#side-menu h2{
+	font-size: 			2.4rem;
+    letter-spacing: 	0.3rem;
+}
+
+#side-menu nav {
+	text-align: 	center;
+	margin: 		auto;
+}
+
+#display img {
+	max-width: 100%;
+}
+
+#display img.fresque {
+	width: 		100%;
+	height: 	200px;	
+}
+
+.col-1 {
+	margin-top: 175px;                             /*A Changer pour version*/ 
+												/*mobile en fonction du menu*/
+}
+
+#photoStock{
+	display: none;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#display img {
+    cursor: 		pointer;
+    transition: 	0.3s;
+}
+
+/* The Modal (background) */
+.modal {
+    display: 			none; /* Hidden by default */
+    position: 			fixed; /* Stay in place */
+    z-index: 			1; /* Sit on top */
+    padding: 			30px 15px;
+    left: 				0;
+    top: 				0;
+    width: 				99.9%; /* Full width */
+    height: 			100%; /* Full height */
+    background-color: rgb(250,250,250); /* Fallback color */
+    background-color: rgba(250,250,250,0.95); /* Black w/ opacity */
+}
+
+.modalFresque {
+    display: 			none;
+    position: 			fixed;
+    z-index: 			1;
+    padding: 			25px 15px;
+    left: 				0;
+    top: 				0;
+    width: 				99.9%;
+    height: 			85%;
+    background-color: 	rgb(250,250,250);
+    background-color: 	rgba(250,250,250,0.9);
+    overflow-x: 		scroll;
+    overflow-y: 		hidden;
+}
+#captionFresque{
+	margin: 			auto;
+	margin-left: 		-5%;
+    display: 			inline-block;
+    max-width: 			100%;
+    max-height: 		100%;
+    bottom: 			50px;
+    position: 			fixed;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: 	auto;
+    display: 	inline-block;
+    max-width: 	90%;
+    max-height: 90%;
+}
+.modal-content img{
+	max-width: 	90%;
+	max-height: 90%;
+}
+
+.modalFresque-content {
+    margin: 		auto;
+    display: 		inline-block;
+    height: 		95%;
+    margin-left: 	20%;
+    margin-right: 	15%;
+}
+
+.fleche{
+	position: 	fixed;
+	top: 		65%;
+	color: 		rgba(200, 209, 188,0.8);
+}
+
+#flecheGauche{
+	left: 5%;
+}
+#flecheDroite{
+	right:5%;
+}
+
+/* S c r o l l   B a r   */
+
+.modalFresque::-webkit-scrollbar {
+    max-width: 		80%;
+    height: 		10px;
+    margin-bottom: 	30px;
+    z-index: 		1000;
+}
+ 
+.modalFresque::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(89, 89, 89,0.9);
+}
+ 
+.modalFresque::-webkit-scrollbar-thumb {
+	background-color: rgb(89, 89, 89);
+	outline: 1px solid slategrey;
+
+}
+
+#scroll-bar{
+	position: 	relative;
+	top: 		15;
+	width: 		600px;
+	height: 	400px;
+}
+
+
+
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: 	auto;
+    display: 	block;
+    width: 		auto;
+    max-width: 	100%;
+    max-height: 80%;
+    text-align: center;
+    color: 		#000;
+    padding: 	10px 0;
+    height: 	150px;
+}
+#captionInfos{
+	position: 			absolute;
+	z-index: 			10;
+	bottom: 			5%;
+	left: 				30px;
+	background-color: 	#fcfcfc;
+	border-radius: 		5px;
+	padding: 			5px;
+	padding-top: 		10px;
+	box-shadow: 		inset 0px 0px 15px rgba(200, 209, 188,0.85);
+}
+
+.closeInfos{
+	position: 	absolute;
+	top: 		5px;
+	right: 		5px;
+}
+
+#captionInfosFresque{
+	position: 			absolute;
+	z-index: 			5000;
+	top: 				5%;
+	left: 				2%;
+	background-color: 	#fcfcfc;
+	max-width: 			20%;
+	border-radius: 		5px;
+	padding: 			5px;
+	padding-top: 		10px;
+	box-shadow: 		inset 0px 0px 15px rgba(200, 209, 188,0.85);
+}
+.closeInfosFresque{
+	position: 	absolute;
+	top: 		5px;
+	left: 		5px;
+	padding: 	5px;
+}
+
+/* Ouvrir le modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: 		absolute;
+    top: 			15px;
+    right: 			35px;
+    color: 			#f1f1f1;
+    font-size: 		40px;
+    font-weight: 	bold;
+    transition: 	0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: 				#bbb;
+    text-decoration: 	none;
+    cursor: 			pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/* Footer */
+footer {
+	text-align: center;
+}
+
+
+
+
+
+/************************* display none/block****/
+.display-none{
+	display: none;
+}
+
+.display-block{
+	display:block;
+}
+
+.display-loaded{
+	opacity: 0;
+}
+
+.disappear{
+	opacity: 	0.0;
+	transition: all 0.8s;
+}
+
+/********************************* a d m i n ****/
+#adminPanel{
+	width: 100%;
+}
+
+#mesOeuvres, #adminPanel{
+	border: 		#e0ebeb solid 1px;
+	box-shadow: 	5px 5px #e0ebeb;
+}
+#mesOeuvres table{
+	border-collapse: 	collapse;
+	border: 			solid 1px grey;
+	max-width: 			100%;
+}
+#mesOeuvres table td, #mesOeuvres table th{
+	max-width: 	12%;
+	height: 	40px;
+}
+
+#mesOeuvres table tr:nth-child(even){
+	background-color: 	#e0ebeb;
+	max-width: 			100%;
+}
+#mesOeuvres table td img {
+	max-width: 	100%;
+	max-height: 100%;
+}
+
+.btn-light{
+	border-bottom-left-radius: 	0;
+	border-bottom-right-radius: 0;
+	border: 					solid 1px #e0ebeb;
+	width: 						100%;
+
+}
+
+
+
+.td-img {
+	padding: 1px;
+}
+
+.fr-toolbar{
+	border-top: 0px #fff !important;
+}
+
+/* Disparition des boutons froala de mise en forme qui servent à rien... */
+#subscript-1, #superscript-1, #paragraphStyle-1, #paragraphFormat-1,
+#formatOL-1, #formatUL-1, #outdent-1, #indent-1, #insertLink-1,
+#insertImage-1, #insertVideo-1, #insertFile-1, #insertTable-1, #emoticons-1,
+#specialCharacters-1, #insertHR-1, #selectAll-1, #clearFormatting-1,
+#print-1, #help-1, #html-1, #undo-1, #redo-1, #strikeThrough-1, .fr-separator.fr-hs,
+.fr-separator.fr-vs{
+	display: none;
+}
+
+#admin-add-form{
+	width: 		50%;
+	margin: 	auto;
+	float: 		right;
+
+}
+
+#admin-add-form input{
+	width: 66%;
+}
+
+#fresque-reveal{
+	display: none;
+}
+
+
+
+#admin-edit-form{
+	width: 		900px;
+	margin: 	auto;
+}
+
+#mesOeuvres td.table-title{
+	background-color: 	#e3f7f7;
+	color: 				#1698ad;
+	font-size: 			1em;
+	text-shadow: 		1px 1px #e0ebeb;
+	box-shadow: 		inset 0px 0px 50px #e0ebeb;
+}
+
+.table td.td-img{
+	padding: 0rem;
+}
+
+.admin-top{
+	border: 			#1698ad 1px solid;
+	color: 				#1698ad;
+	position: 			fixed;
+	background-color: 	#fcfcfc;
+	width: 				20%;
+	left: 				50%;
+    transform: 			translateX(-50%);
+    margin-top: 		-1px;
+	z-index: 			5;
+}
+
+
+.contact-item form div.fr-toolbar{
+	display: none;
+}
+
+
+.lettres{
+	display:inline-block;
+}
+
+.lettre8{
+	opacity:0;
+}
+
+@media only screen and (min-width: 768px) {
+
+h2{
+	/* margin: 30px 30px 0 ; */
+	font-size: 		3rem;
+	letter-spacing: 0.3rem;
+	margin-top: 	45px;
+}
+
+nav ul li {
+	float: left;
+}
+
+header nav ul li:first-child{
+	text-align: right;
+}
+
+header nav ul li:last-child{
+	text-align: left;
+}
+
+header nav {
+	height: 	5vh;
+	width: 		20%;
+}
+
+nav li a:hover{
+    color: 			#fff;
+    text-shadow: 	1px 1px 2px #000000;
+    transition: 	all 0.1s;
+}
+
+.taLeft{
+	text-align: center;
+}
+
+.main-image img{
+	max-width: 		125%;
+	max-height: 	125%;
+	overflow: 		hidden;
+}
+
+.menu {
+	padding: 70px;
+}
+
+.submenu{
+	width: 		33%;
+	height: 	80%;
+	padding: 	10px;
+	text-align: left;
+	top: 		10%;
+}
+.submenu div{
+	height: 	auto;
+	width: 		auto;
+}
+.submenu h3{
+	font-size: 		2em;
+	margin: 		auto;
+	margin-top: 	30%;
+}
+
+.submenu img{
+	margin: auto;
+}
+
+.leftblock h3{
+	right: -15px;
+}
+
+.rightblock h3{
+	left:-15px;
+}
+
+#contact{
+	height: 100%;
+}
+#contact .contact-item{
+	height: 	100%;
+	width: 		50%;
+	float: 		left;
+	overflow: 	hidden;
+}
+
+#contact .contact-item{
+	padding-top: 10%;
+}
+
+#contact .contact-item.contact-form{
+	padding-top: 15%;
+}
+
+.page-oeuvres{
+	width: 100%;
+}
+#side-menu {
+	position: 		fixed;
+	float: left;
+	width: 25%;
+	text-align: left;
+	margin: 20px;
+}
+
+#side-menu a h2 {
+	font-size: 		2rem;
+	letter-spacing: 0.3rem;
+	margin: 0 !important;
+	
+}
+
+#side-menu li{
+		text-align: left;
+}
+
+
+#display {
+	width: 	70%;
+	margin: auto;
+	padding-left: 10%;
+	float: right;
+}
+
+#display .column{
+	width: 		20%;
+	margin: 	0.5%;
+	float: 		left;
+
+}
+
+.column img{
+	max-width: 90%;
+}
+#captionInfos{
+	top: 		10%;
+	left: 		5%;
+	bottom: 	auto;
+	max-width: 	20%;
+}
+
+.fleche{
+	z-index: 		12;
+	position: 		fixed;
+	top: 			65%;
+	color: 			rgba(200, 209, 188,0.95);
+	cursor: 		pointer;
+}
+
+
+#flecheGauche{
+	left: 5%;
+}
+#flecheDroite{
+	right:5%;
+}
+
+}
+/* Fin Media Queries */
